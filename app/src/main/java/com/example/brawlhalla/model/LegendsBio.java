@@ -9,10 +9,10 @@ import java.util.List;
 
 public class LegendsBio {
 
-    String BioName;
+    String name;
     String bioBotName;
-    String bioTitle;
-    String bioStory;
+    String legendsNickNames;
+    String story;
     String bioWeapon1;
     String bioWeapon2;
     int strength;
@@ -21,10 +21,10 @@ public class LegendsBio {
     int defense;
 
     public LegendsBio(JSONObject jsonObject) throws JSONException{
-        BioName = jsonObject.getString("legend_name_key");
+        name = jsonObject.getString("legend_name_key");
         bioBotName = jsonObject.getString("bot_name");
-        bioTitle = jsonObject.getString("bio_aka");
-        bioStory = jsonObject.getString("bio_text");
+        legendsNickNames = jsonObject.getString("bio_aka");
+        story = jsonObject.getString("bio_text");
         bioWeapon1 = jsonObject.getString("weapon_one");
         bioWeapon2 = jsonObject.getString("weapon_two");
         strength = jsonObject.getInt("strength");
@@ -33,20 +33,20 @@ public class LegendsBio {
         defense = jsonObject.getInt("defense");
     }
 
-    public String getBioName() {
-        return BioName;
+    public String getName() {
+        return name;
     }
 
     public String getBioBotName() {
         return bioBotName;
     }
 
-    public String getBioTitle() {
-        return bioTitle;
+    public String getLegendsNickNames() {
+        return legendsNickNames;
     }
 
     public String getBioStory() {
-        return bioStory;
+        return story;
     }
 
     public String getBioWeapon1() {

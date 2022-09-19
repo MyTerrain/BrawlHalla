@@ -13,7 +13,6 @@ import com.example.brawlhalla.model.Legends;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +30,6 @@ public class LegendScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.legends_rv_activity);
-
         RecyclerView rvView = findViewById(R.id.rvLegends);
         legendsList = new ArrayList<>();
         LegendsAdapter adapter = new LegendsAdapter(this, legendsList);
@@ -61,7 +59,6 @@ public class LegendScreen extends AppCompatActivity {
 
             }
         });
-
 
     }
 }

@@ -1,15 +1,20 @@
 package com.example.brawlhalla;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.brawlhalla.model.Legends;
+
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
+    List<Legends> passInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

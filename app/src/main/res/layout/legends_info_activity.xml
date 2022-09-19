@@ -20,16 +20,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginEnd="125dp"
         android:text="&quot;Botvar&quot;"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvInfoName"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/tvInfoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="125dp"
         android:layout_marginTop="8dp"
         android:text="Bodvar"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,9 +46,10 @@
         android:text="Born of a viking mother and bear father, Bödvar grew up feared and mistrusted by his own people. Bödvar's first nemesis was the terrible giant bear Grothnar, his own brother. By defeating Grothnar in a battle that lasted seven days, Bödvar chose to side with humanity and became the protector of the people of the north. He led his Skandian people against the Witch Queen of Helheim, slew the White Dragon Sorcerer, and lived the life of an all-conquering hero. After he single-handedly ended the Giant Wars by trapping the fire giant king in his own volcano, Bödvar sensed his work was done. But he felt doomed to never be taken by the Valkyries to Valhalla because he could never manage to be defeated in battle. So he travelled to Asgard himself, broke down the doors, and let himself in. Valhalla is everything Bödvar hoped - an endless reward of feasting and fighting, with himself among its greatest champions."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBioNN"
+        app:layout_constraintVertical_bias="0.11" />
 
     <TextView
         android:id="@+id/tvBioNN"
@@ -115,20 +118,20 @@
         app:layout_constraintTop_toBottomOf="@+id/tvBioWeapon1" />
 
     <RatingBar
-        android:id="@+id/rbpeed"
+        android:id="@+id/rbSpeed"
         style="@android:style/Widget.Material.RatingBar.Small"
         android:layout_width="wrap_content"
         android:layout_height="21dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
         android:indeterminate="false"
         android:max="5"
         android:numStars="10"
         android:progress="5"
         android:rating="5"
         android:scrollbarSize="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvSpeed" />
+        app:layout_constraintStart_toEndOf="@+id/tvSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/rbDefense" />
 
     <TextView
         android:id="@+id/tvSpeed"
@@ -179,4 +182,36 @@
         android:text="Dexterity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvStrength" />
+
+    <Button
+        android:id="@+id/btBackButton"
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:insetLeft="-10dp"
+        app:icon="?attr/homeAsUpIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/EndQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:text="&quot;"
+        app:layout_constraintStart_toEndOf="@+id/tvBotName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/startQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:text="&quot;"
+        app:layout_constraintEnd_toStartOf="@+id/tvBotName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,7 +63,7 @@ public class LegendsBioAdapter extends RecyclerView.Adapter<LegendsBioAdapter.Vi
             nickNames = itemView.findViewById(R.id.tvBioNN);
             firstWeapon = itemView.findViewById(R.id.tvBioWeapon1);
             secondWeapon = itemView.findViewById(R.id.tvBioWeapon2);
-            speed = itemView.findViewById(R.id.rbpeed);
+            speed = itemView.findViewById(R.id.rbSpeed);
             defense = itemView.findViewById(R.id.rbDefense);
             dexterity = itemView.findViewById(R.id.rbDexterity);
             strength = itemView.findViewById(R.id.rbStength);
@@ -71,10 +71,10 @@ public class LegendsBioAdapter extends RecyclerView.Adapter<LegendsBioAdapter.Vi
 
 
         public void bind(LegendsBio legendsBioAdapter) {
-            bioName.setText(legendsBioAdapter.getBioName());
-            botName.setText(legendsBioAdapter.getBioName());
+            bioName.setText(legendsBioAdapter.getName());
+            botName.setText(legendsBioAdapter.getName());
             story.setText(legendsBioAdapter.getBioStory());
-            nickNames.setText(legendsBioAdapter.getBioTitle());
+            nickNames.setText(legendsBioAdapter.getLegendsNickNames());
             firstWeapon.setText(legendsBioAdapter.getBioWeapon1());
             secondWeapon.setText(legendsBioAdapter.getBioWeapon2());
             speed.setRating((float) legendsBioAdapter.getSpeed());
